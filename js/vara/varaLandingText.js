@@ -36,7 +36,7 @@ var vara = new Vara(
       text: "Hello! I'm Katarzyna",
         y: 200,
     //   fromCurrentPosition: { y: false },
-       duration: 4000
+       duration: 3000
     },
     // {
     //   text: "Hi there,",

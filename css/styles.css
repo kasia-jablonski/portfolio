@@ -56,6 +56,11 @@ header {
     animation-name: bounce;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
+
+}
+
+.arrow:hover {
+    color: bisque;
 }
 
 #top {
@@ -90,15 +95,16 @@ h2 {
     align-items: stretch;
     display: flex;
     margin: 100px 150px 100px 150px;
-    mar
 }
 .about-photo {
     margin-right: 30px;
-    display: flex;
+    /* display: flex;
     align-self: start;
     justify-content: center;
-    align-items: center;
-    padding: 30px;
+    align-items: center; */
+    /* padding: 30px; */
+    width: 1000px;
+    height: auto;
 }
 
 .about-text {
@@ -106,12 +112,13 @@ h2 {
     font-size: 20px;
     color: white;
     padding: 30px;
-
+    line-height: 1.6;
 }
 
 .icons {
     font-size: 60px;
     color:white;
+    transition: all .5s;
 }
 
 .icons-text {
@@ -119,9 +126,14 @@ h2 {
     font-size: 20px;
 }
 
+
 .skill i:hover {
     color: bisque;
-    transform: scale(1.2);
+    font-size: 66px;
+}
+
+.projects {
+    margin: 100px 200px 100px 200px;
 }
 
 

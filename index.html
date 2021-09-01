@@ -24,8 +24,8 @@
         <div class="main-nav">
             <ul class="nav">
                 <li class="name">Katarzyna Jablonski</li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Skills</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
                 <li></li>
@@ -36,64 +36,66 @@
 
 
 
-        <span class="uk-icon-link arrow" uk-icon="icon: chevron-down; ratio: 2"></span>
+        <span class="uk-icon-link arrow" uk-icon="icon: chevron-down; ratio: 2.5"></span>
 
 
     </header>
     <main>
-        <h2>About me</h2>
+        <h2 id="about">About me</h2>
 
         <div class="about-me">
             <div class="about-photo " uk-scrollspy="cls:uk-animation-slide-left; repeat: true">
-                <img src="http://placeimg.com/500/500/people">
+                <img src="images/avt2.png">
             </div>
             <div class="about-text" uk-scrollspy="cls:uk-animation-slide-right; repeat: true">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>My name is Katarzyna Jablonski and I live in Stamford, CT. I have Bachelor’s degree in Computer Science and I recently graduated from a university with a Master's degree in Biology. During my studies I worked on several research projects using mainly Python and biological databases. Lately, I've been taking online courses and working on personal projects. I love spending time on learning new things and taking on new challenges.</p>
             </div>   
         </div>
 
-        <h2>Skills</h2>
+        <h2 id="skills">Skills</h2>
 
         <div class="uk-grid-medium uk-child-width-1-3@s uk-text-center" uk-grid>
             <div>
                 <!-- <div class="uk-card uk-card-default uk-card-body">Item</div> -->
-                <div class="skill">
-                    <i class="devicon-python-plain icons"></i>
+                <div class="skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
+                    <div class="icon-container">
+                        <i class="devicon-python-plain icons"></i>
+                    </div>
                     <p class="icons-text">python</p>
                 </div>
-                <div class="skill">
+                <div class="skill" class="skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
                     <i class="devicon-html5-plain icons"></i>
                     <p class="icons-text">html</p>
                 </div>
-                <div class="skill">
+                <div class="skill" class="skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
                     <i class="devicon-django-plain icons"></i>
                     <p class="icons-text">django</p>
                 </div>
             </div>
-            <div>
-                <div class="skill">
+            <div >
+                <div class="skill" class="skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
                     <i class="devicon-css3-plain icons"></i>
                     <p class="icons-text">css</p>
                 </div>
-                <div class="skill">
+                <div class="skill" class="skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
                     <i class="devicon-javascript-plain icons"></i>
                     <p class="icons-text">javascript</p>
                 </div>
-                <div class="skill">
+                <div class="skill" class="skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
                     <i class="devicon-flask-original icons"></i>
                     <p class="icons-text">flask</p>
                 </div>
             </div>
             <div>
-                <div class="skill">
+                <div class="skill" class="skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
                     <i class="icon-database icons"></i>
                     <p class="icons-text">sql</p>
                 </div>
-                <div class="skill">
+                <div class="skill" class="skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
                     <i class="devicon-jquery-plain icons"></i>
                     <p class="icons-text">jquery</p>
                 </div>
-                <div class="skill">
+                <div class="skill" class="skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
                     <i class="devicon-github-original icons"></i>
                     <p class="icons-text">github</p>
                 </div>
@@ -101,6 +103,74 @@
         </div>
 
         <h2>Projects</h2>
+
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin projects" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+                <img src="images/sudoku.jpg" alt="" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" uk-contain>
+            </div>
+            <div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Media Left</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin projects" uk-grid>
+            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                <img src="images/sudoku.jpg" alt="" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" uk-contain>
+            </div>
+            <div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Media Right</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin projects" uk-grid>
+            <!-- <div class="uk-flex-first@s uk-card-media-left uk-cover-container"> -->
+            <div class="uk-card-media-left uk-cover-container">    
+                <img src="images/sudoku.jpg" alt="" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" uk-contain>
+                <!-- <canvas width="600" height="400"></canvas> -->
+            </div>
+            <div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Media Left</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin projects" uk-grid>
+            <div class="uk-card-media-right uk-cover-container">
+                <img src="images/sudoku.jpg" alt="" uk-contain>
+                <!-- <canvas width="600" height="400"></canvas> -->
+            </div>
+            <div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Media Right</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin projects" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+            <!-- <div class="uk-flex-last@s uk-card-media-left uk-cover-container">     -->
+                <img src="images/sudoku.jpg" alt="" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" uk-contain>
+                <!-- <canvas width="600" height="400"></canvas> -->
+            </div>
+            <div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Media Left</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Contact me</h2>
+        
 
     </main>
 
