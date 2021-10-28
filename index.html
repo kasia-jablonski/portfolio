@@ -26,12 +26,13 @@
                 <li class="name">Katarzyna Jablonski</li>
                 <li><a href="#about">About me</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li></li>
             </ul>
         </div>
         <!-- <h1>Hello! I'm Katarzyna</h1> -->
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid></div>
         <div id="hello"></div>
 
 
@@ -43,20 +44,68 @@
     <main>
         <h2 id="about">About me</h2>
 
-        <div class="about-me">
-            <div class="about-photo " uk-scrollspy="cls:uk-animation-slide-left; repeat: true">
-                <img src="images/avt2.png">
+        <div class="about-me .uk-flex-middle" uk-grid>
+            <div class="about-photo-container uk-flex-first@s uk-width-1-4@m"
+                uk-scrollspy="cls:uk-animation-slide-left; repeat: true">
+                <img class="uk-align-left@m uk-margin-remove-adjacent about-photo" src="images/avt2.png">
             </div>
-            <div class="about-text" uk-scrollspy="cls:uk-animation-slide-right; repeat: true">
-                <p>My name is Katarzyna Jablonski and I live in Stamford, CT. I have Bachelor’s degree in Computer Science and I recently graduated from a university with a Master's degree in Biology. During my studies I worked on several research projects using mainly Python and biological databases. Lately, I've been taking online courses and working on personal projects. I love spending time on learning new things and taking on new challenges.</p>
-            </div>   
+            <div class="about-text uk-width-3-4@m" uk-scrollspy="cls:uk-animation-slide-right; repeat: true">
+                <p>My name is Katarzyna Jablonski and I live in Stamford, CT. I have Bachelor’s degree in Computer
+                    Science and I recently graduated from a university with a Master's degree in Biology. During my
+                    studies I worked on several research projects using mainly Python and biological databases. Lately,
+                    I've been taking online courses and working on personal projects. I love spending time on learning
+                    new things and taking on new challenges.</p>
+            </div>
         </div>
 
         <h2 id="skills">Skills</h2>
 
-        <div class="uk-grid-medium uk-child-width-1-3@s uk-text-center" uk-grid>
+        <!--  - ------- NEW  ------------ -->
+        <div class="uk-flex uk-flex-wrap uk-flex-wrap-around uk-text-center">
+            <div class="uk-width-1-3@s uk-width-1-2 skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
+                <div class="icon-container">
+                    <i class="devicon-python-plain icons"></i>
+                </div>
+                <p class="icons-text">python</p>
+            </div>
+            <div class="uk-width-1-3@s uk-width-1-2 skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
+                <i class="devicon-css3-plain icons"></i>
+                <p class="icons-text">css</p>
+            </div>
+            <div class="uk-width-1-3@s uk-width-1-2 skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
+                <span class="uk-icon-link icons" uk-icon="icon: database; ratio: 3"></span>
+                <!-- <i class="icon-database icons"></i> -->
+                <p class="icons-text">sql</p>
+            </div>
+            <div class="uk-width-1-3@s uk-width-1-2 skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
+                <i class="devicon-html5-plain icons"></i>
+                <p class="icons-text">html</p>
+            </div>
+            <div class="uk-width-1-3@s uk-width-1-2 skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
+                <i class="devicon-javascript-plain icons"></i>
+                <p class="icons-text">javascript</p>
+            </div>
+            <div class="uk-width-1-3@s uk-width-1-2 skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
+                <i class="devicon-jquery-plain icons"></i>
+                    <p class="icons-text">jquery</p>
+            </div>
+            <div class="uk-width-1-3@s uk-width-1-2 skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
+                <i class="devicon-django-plain icons"></i>
+                <p class="icons-text">django</p>
+            </div>
+            <div class="uk-width-1-3@s uk-width-1-2 skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
+                <i class="devicon-flask-original icons"></i>
+                    <p class="icons-text">flask</p>
+            </div>
+            <div class="uk-width-1-3@s uk-width-1-2 skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
+                <i class="devicon-github-original icons"></i>
+                    <p class="icons-text">github</p>
+            </div>
+        </div>
+
+        <!--  - ------- OLD  ------------ -->
+        <!-- <div class="uk-grid-medium uk-child-width-1-3@s uk-text-center" uk-grid>
             <div>
-                <!-- <div class="uk-card uk-card-default uk-card-body">Item</div> -->
                 <div class="skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
                     <div class="icon-container">
                         <i class="devicon-python-plain icons"></i>
@@ -72,7 +121,7 @@
                     <p class="icons-text">django</p>
                 </div>
             </div>
-            <div >
+            <div>
                 <div class="skill" class="skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
                     <i class="devicon-css3-plain icons"></i>
                     <p class="icons-text">css</p>
@@ -88,7 +137,7 @@
             </div>
             <div>
                 <div class="skill" class="skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
-                    <i class="icon-database icons"></i>
+                    <span class="uk-icon-link icons" uk-icon="icon: database; ratio: 3"></span>
                     <p class="icons-text">sql</p>
                 </div>
                 <div class="skill" class="skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
@@ -100,77 +149,74 @@
                     <p class="icons-text">github</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <h2>Projects</h2>
+        <h2 id="projects">Projects</h2>
 
         <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin projects" uk-grid>
-            <div class="uk-card-media-left uk-cover-container">
-                <img src="images/sudoku.jpg" alt="" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" uk-contain>
+            <div class="uk-card-media-left uk-cover-container video-container">
+                <video src="videos/sudoku.mp4" loop muted playsinline uk-video="autoplay: inview">
+                    <!-- <source src="videos/sudoku.mkv" type="video/mkv"> -->
+                </video>
+                <!-- <img src="images/sudoku.jpg" alt="" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" uk-contain> -->
             </div>
             <div>
                 <div class="uk-card-body">
-                    <h3 class="uk-card-title">Media Left</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin projects" uk-grid>
-            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-                <img src="images/sudoku.jpg" alt="" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" uk-contain>
-            </div>
-            <div>
-                <div class="uk-card-body">
-                    <h3 class="uk-card-title">Media Right</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <h3 class="uk-card-title">Sudoku</h3>
+                    <p>Sudoku game developed with Python and Pygame. Algorithm creates random sudoku board with empty
+                        spaces for player to insert digits with only one correct combination of numbers.</p>
                 </div>
             </div>
         </div>
 
         <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin projects" uk-grid>
-            <!-- <div class="uk-flex-first@s uk-card-media-left uk-cover-container"> -->
-            <div class="uk-card-media-left uk-cover-container">    
-                <img src="images/sudoku.jpg" alt="" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" uk-contain>
-                <!-- <canvas width="600" height="400"></canvas> -->
+            <div class="uk-flex-last@s uk-card-media-right uk-cover-container video-container">
+                <!-- <img src="images/sudoku.jpg" alt="" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" uk-contain> -->
+                <video src="videos/mice.mkv" loop muted playsinline uk-video="autoplay: inview">
             </div>
             <div>
                 <div class="uk-card-body">
-                    <h3 class="uk-card-title">Media Left</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin projects" uk-grid>
-            <div class="uk-card-media-right uk-cover-container">
-                <img src="images/sudoku.jpg" alt="" uk-contain>
-                <!-- <canvas width="600" height="400"></canvas> -->
-            </div>
-            <div>
-                <div class="uk-card-body">
-                    <h3 class="uk-card-title">Media Right</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <h3 class="uk-card-title">Selection</h3>
+                    <p>Sudoku game developed with Python and Pygame. Program allows user to choose number of mice and
+                        cheese and see outcome through next generations. Algoritm sets number of mice depending on how
+                        many cheeses was eaten and if mouse is going to die, survive or multiply.</p>
                 </div>
             </div>
         </div>
 
         <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin projects" uk-grid>
-            <div class="uk-card-media-left uk-cover-container">
-            <!-- <div class="uk-flex-last@s uk-card-media-left uk-cover-container">     -->
-                <img src="images/sudoku.jpg" alt="" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" uk-contain>
-                <!-- <canvas width="600" height="400"></canvas> -->
+            <div class="uk-card-media-left uk-cover-container video-container">
+                <img src="images/bokeh_plot.png" alt="" uk-scrollspy="cls: uk-animation-kenburns; repeat: true"
+                    uk-contain>
             </div>
             <div>
                 <div class="uk-card-body">
-                    <h3 class="uk-card-title">Media Left</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <h3 class="uk-card-title">Covid cases statistics</h3>
+                    <p>Graphs showing new Covid-19 daily cases for US and for each state with dropdown menu for each
+                        state. Project developed using Python and visualization library Bokeh. Data is retreived from
+                        Covid Act Now API. </p>
                 </div>
             </div>
         </div>
 
-        <h2>Contact me</h2>
-        
+
+        <h2 id="contact">Contact</h2>
+        <div class="email">
+            <!-- <p> -->
+            <!-- <span class="uk-icon-link arrow" uk-icon="icon: mail; ratio: 2.5" uk-svg="stroke-animation: true"></span>  -->
+            <!-- <div class="uk-animation-toggle" tabindex="0">
+                    <img class="uk-animation-stroke envelope" src="images/email.svg" uk-svg="stroke-animation: true">
+                </div> -->
+
+            <div class="uk-animation-toggle" tabindex="0">
+                <img class="uk-animation-stroke" width="100" height="100" src="images/env_stokes.svg" alt=""
+                    uk-svg="stroke-animation: true">
+            </div>
+            <a class="email"
+                href="mailto:katarzyna.jablonski15@gmail.com?subject=Hi%20There!">katarzyna.jablonski15@gmail.com</a>
+            <!-- </p> -->
+        </div>
+
 
     </main>
 

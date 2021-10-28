@@ -94,17 +94,24 @@ h2 {
     overflow-x: hidden;
     align-items: stretch;
     display: flex;
-    margin: 100px 150px 100px 150px;
+    /* margin: 100px 150px 100px 150px; */
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 0 30px;
 }
-.about-photo {
-    margin-right: 30px;
-    /* display: flex;
-    align-self: start;
-    justify-content: center;
-    align-items: center; */
-    /* padding: 30px; */
-    width: 1000px;
-    height: auto;
+
+@media (max-width: 960px) {
+    .about-photo-container {
+        /* margin-right: 30px; */
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+        /* width: 1000px;
+        height: auto; */
+    }
+    .about-photo {
+        height: 260px;
+    }
 }
 
 .about-text {
@@ -132,8 +139,65 @@ h2 {
     font-size: 66px;
 }
 
+.skill span:hover {
+    color: bisque;
+    transform: scale(1.2);
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
 .projects {
-    margin: 100px 200px 100px 200px;
+    margin: 0px 200px;
+}
+@media (max-width: 1000px) {
+    .projects {
+        margin: 0px 100px;
+    }
+}
+@media (max-width: 720px) {
+    .projects {
+        margin: 0px 30px;
+    }
+}
+
+.uk-card-body {
+    font-family: 'Karla', sans-serif;
+    color:slategray;
+}
+
+.uk-card-title {
+    text-align: center;
+    font-weight: 700;
+}
+
+.email {
+    text-align: center;
+    color: white;
+}
+
+.envelope {
+    width: 5%;
+    height: auto;
+}
+
+#contact {
+    margin-bottom: 20px;
+
+}
+
+.email {
+    text-decoration: none;
+    transition: all .5s;
+    color: white;
+    font-size: 1.25em;
+}
+
+.email a:hover {
+    text-decoration: underline;
+    color: bisque;
 }
 
 
