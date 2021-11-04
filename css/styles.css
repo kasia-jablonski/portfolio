@@ -173,11 +173,6 @@ h2 {
     font-weight: 700;
 }
 
-.email {
-    text-align: center;
-    color: white;
-}
-
 .envelope {
     width: 5%;
     height: auto;
@@ -189,10 +184,13 @@ h2 {
 }
 
 .email {
+    text-align: center;
+    color: white;
     text-decoration: none;
     transition: all .5s;
     color: white;
     font-size: 1.25em;
+    padding-bottom: 3rem;
 }
 
 .email a:hover {
