@@ -36,6 +36,9 @@ header {
     .name {
         padding-bottom: 0;
     }
+    .nav .name {
+        font-size: 1.1em
+    }
 }
 
 .nav {
@@ -64,6 +67,16 @@ header {
     color: bisque;
 }
 
+@media (max-width: 660px) {
+    .uk-offcanvas-bar {
+        width: 200px;
+    }
+}
+
+.uk-navbar-right {
+    padding-right: .5rem;
+}
+
 .arrow {
     color: white;
     /* animation: bounce 2s ease infinite bottom; */
@@ -88,7 +101,12 @@ header {
 }
 
 .offcanvas-bar {
-    background-color: #FC9B8c;
+    /* background-color: #FC9B8c; */
+    /* background-color: #EDB183; */
+    /* background-color: #FBC4AB; */
+    /* background-color: #788475; */
+    /* background-color :#F79D5C; */
+    background: linear-gradient(#EDB183, #FBC4AB 75%, #FC9B8c);
 
 }
 
