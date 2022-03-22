@@ -82,7 +82,7 @@
             <div class="about-text uk-width-3-4@m" uk-scrollspy="cls:uk-animation-slide-right; repeat: true">
                 <p>My name is Katarzyna Jablonski and I live in Stamford, CT. I have a Bachelor’s degree in Computer
                     Science and I recently graduated from a university with a Master's degree in Biology. During my
-                    studies I worked on several research projects using mainly Python and biological databases. Lately,
+                    studies, I worked on several research projects using mainly Python and biological databases. Lately,
                     I've been taking online courses and working on personal projects. I love spending time learning
                     new things and taking on new challenges.</p>
             </div>
@@ -184,6 +184,19 @@
         <h2 id="projects">Projects</h2>
 
         <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin projects" uk-grid>
+            <div class="uk-flex-last@s uk-card-media-right uk-cover-container video-container">
+                <img src="images/todo.jpg" alt="" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" uk-contain>
+                <!-- <video src="videos/mice.mp4" loop muted playsinline uk-video="autoplay: inview"> -->
+            </div>
+            <div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Todo app</h3>
+                    <p>Todo app is a challenge developed with Python and Flask. The user can add new tasks to the list, mark a task as completed or delete it, filter tasks by all/active/complete, clear all completed tasks, reorder tasks by dragging them, and switch between dark and light mode.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin projects" uk-grid>
             <div class="uk-card-media-left uk-cover-container video-container">
                 <video src="videos/sudoku.mp4" loop muted playsinline uk-video="autoplay: inview">
                     <!-- <source src="videos/sudoku.mkv" type="video/mkv"> -->
@@ -194,7 +207,7 @@
                 <div class="uk-card-body">
                     <h3 class="uk-card-title">Sudoku</h3>
                     <p>Sudoku game developed with Python and Pygame. An algorithm creates a random sudoku board with empty
-                        spaces for player to insert digits with only one correct combination of numbers.</p>
+                        spaces for the player to insert digits with only one correct combination of numbers.</p>
                 </div>
             </div>
         </div>
@@ -208,8 +221,8 @@
                 <div class="uk-card-body">
                     <h3 class="uk-card-title">Selection</h3>
                     <p>Program simulating selection developed with Python and Pygame. The user can choose the number of mice and
-                        cheese in order to see the outcome through next generations. The algoritm sets the number of mice depending on how
-                        many pieces of cheese were eaten which determine if mouse is going to die, survive or multiply.</p>
+                        cheese to see the outcome through next generations. The algorithm sets the number of mice depending on how
+                        many pieces of cheese were eaten which determines if the mouse is going to die, survive or multiply.</p>
                 </div>
             </div>
         </div>
@@ -223,7 +236,7 @@
             <div>
                 <div class="uk-card-body">
                     <h3 class="uk-card-title">Covid cases statistics</h3>
-                    <p>Graphs showing new Covid-19 daily cases for US and for each state through dropdown selections. Project developed using Python and visualization library Bokeh. Data is retreived from the
+                    <p>Graphs showing new Covid-19 daily cases for the US and each state through dropdown selections. Project developed using Python and visualization library Bokeh. Data is retrieved from the
                         Covid Act Now API. </p>
                 </div>
             </div>
