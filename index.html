@@ -16,6 +16,14 @@
 
 
     <link rel="stylesheet" href="css/styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V5YEBZPEJS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-V5YEBZPEJS');
+    </script>
 
 </head>
 
@@ -43,26 +51,28 @@
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                    <a class="uk-navbar-toggle uk-hidden@m uk-icon menu" uk-navbar-toggle-icon="ratio: 1.75" href="#offcanvas" uk-toggle=""></a>
+                    <a class="uk-navbar-toggle uk-hidden@m uk-icon menu" uk-navbar-toggle-icon="ratio: 1.75"
+                        href="#offcanvas" uk-toggle=""></a>
                 </div>
-                <div id="offcanvas" class="uk-offcanvas" uk-offcanvas="flip: true; mode: slide; overlay: true" style="display:block" tabindex="-1">
-                <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-push offcanvas-bar">
-                    <div class="uk-panel ">
-                        <ul class="uk-nav uk-nav-default">
-                            <li><a href="#about">About me</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
+                <div id="offcanvas" class="uk-offcanvas" uk-offcanvas="flip: true; mode: slide; overlay: true"
+                    style="display:block" tabindex="-1">
+                    <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-push offcanvas-bar">
+                        <div class="uk-panel ">
+                            <ul class="uk-nav uk-nav-default">
+                                <li><a href="#about">About me</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>    
-        
+            </nav>
+
         </div>
         <!-- <h1>Hello! I'm Katarzyna</h1> -->
         <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid></div>
         <div id="hello">
-            
+
         </div>
 
 
@@ -117,7 +127,7 @@
             </div>
             <div class="uk-width-1-3@s uk-width-1-2 skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
                 <i class="devicon-jquery-plain icons"></i>
-                    <p class="icons-text">jquery</p>
+                <p class="icons-text">jquery</p>
             </div>
             <div class="uk-width-1-3@s uk-width-1-2 skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
                 <i class="devicon-django-plain icons"></i>
@@ -125,11 +135,11 @@
             </div>
             <div class="uk-width-1-3@s uk-width-1-2 skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
                 <i class="devicon-flask-original icons"></i>
-                    <p class="icons-text">flask</p>
+                <p class="icons-text">flask</p>
             </div>
             <div class="uk-width-1-3@s uk-width-1-2 skill" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
                 <i class="devicon-github-original icons"></i>
-                    <p class="icons-text">github</p>
+                <p class="icons-text">github</p>
             </div>
         </div>
 
@@ -191,7 +201,9 @@
             <div>
                 <div class="uk-card-body">
                     <h3 class="uk-card-title">Todo app</h3>
-                    <p>Todo app is a challenge developed with Python, Flask and PostgreSQL. The user can add new tasks to the list, mark a task as complete, delete a task, filter tasks by all/active/complete, clear all completed tasks, reorder tasks by dragging them, and switch between dark and light mode.</p>
+                    <p>Todo app is a challenge developed with Python, Flask and PostgreSQL. The user can add new tasks
+                        to the list, mark a task as complete, delete a task, filter tasks by all/active/complete, clear
+                        all completed tasks, reorder tasks by dragging them, and switch between dark and light mode.</p>
                 </div>
             </div>
         </div>
@@ -206,7 +218,8 @@
             <div>
                 <div class="uk-card-body">
                     <h3 class="uk-card-title">Sudoku</h3>
-                    <p>Sudoku game developed with Python and Pygame. An algorithm creates a random sudoku board with empty
+                    <p>Sudoku game developed with Python and Pygame. An algorithm creates a random sudoku board with
+                        empty
                         spaces for the player to insert digits with only one correct combination of numbers.</p>
                 </div>
             </div>
@@ -220,9 +233,12 @@
             <div>
                 <div class="uk-card-body">
                     <h3 class="uk-card-title">Selection</h3>
-                    <p>Program simulating selection developed with Python and Pygame. The user can choose the number of mice and
-                        cheese to see the outcome through next generations. The algorithm sets the number of mice depending on how
-                        many pieces of cheese were eaten which determines if the mouse is going to die, survive or multiply.</p>
+                    <p>Program simulating selection developed with Python and Pygame. The user can choose the number of
+                        mice and
+                        cheese to see the outcome through next generations. The algorithm sets the number of mice
+                        depending on how
+                        many pieces of cheese were eaten which determines if the mouse is going to die, survive or
+                        multiply.</p>
                 </div>
             </div>
         </div>
@@ -236,7 +252,8 @@
             <div>
                 <div class="uk-card-body">
                     <h3 class="uk-card-title">Covid cases statistics</h3>
-                    <p>Graphs showing new Covid-19 daily cases for the US and each state through dropdown selections. Project developed using Python and visualization library Bokeh. Data is retrieved from the
+                    <p>Graphs showing new Covid-19 daily cases for the US and each state through dropdown selections.
+                        Project developed using Python and visualization library Bokeh. Data is retrieved from the
                         Covid Act Now API. </p>
                 </div>
             </div>
